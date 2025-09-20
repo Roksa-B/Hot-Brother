@@ -1,0 +1,34 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #000; /* чорний фон */
+  font-family: Arial, sans-serif;
+  color: white;
+  text-align: center;
+  overflow: hidden; /* щоб емоджі не вилазили */
+}
+
+.timer {
+  font-size: 3em;
+  background: rgba(0,0,0,0.5);
+  padding: 20px 40px;
+  border-radius: 20px;
+  border: 2px solid #ff5722; /* помаранчева рамка */
+  box-shadow: 0 0 20px #ff5722;
+  z-index: 10;
+}
+
+/* стилі для літаючих емоджі */
+.emoji {
+  position: absolute;
+  font-size: 2rem;
+  animation: floatUp linear infinite;
+}
+
+@keyframes floatUp {
+  from { transform: translateY(100vh); opacity: 1; }
+  to   { transform: translateY(-10vh); opacity: 0; }
+}
