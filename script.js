@@ -19,7 +19,7 @@ setInterval(() => {
 }, 1000);
 
 // Літаючі емоджі
-const emojis = ["✨","🔥","🌙","💫","🎈","🚀"];
+const emojis = ["🪢","💋","🍑","👧🏼","💕","🍼","😛","🦄"];
 function createEmoji() {
   const emoji = document.createElement("div");
   emoji.classList.add("emoji");
