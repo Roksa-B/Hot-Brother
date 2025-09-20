@@ -1,5 +1,5 @@
 // Таймер
-const targetDate = new Date("2025-12-31T23:59:59").getTime();
+const targetDate = new Date("2025-10-21T20:00:00").getTime();
 const countdown = document.getElementById("countdown");
 
 setInterval(() => {
@@ -14,7 +14,7 @@ setInterval(() => {
   countdown.innerHTML = `${days} дн 🌍 ${hours} год ⏰ ${minutes} хв 🕒 ${seconds} сек 🔥`;
 
   if (distance < 0) {
-    countdown.innerHTML = "🎉 Час настав! 🚀✨🔥";
+    countdown.innerHTML = "Гарячий Братчик приїхав!😋";
   }
 }, 1000);
 
