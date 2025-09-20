@@ -3,25 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Hot Bro</title>
-  <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: url("background.jpg") no-repeat center center/cover;
-      font-family: Arial, sans-serif;
-      color: white;
-      text-align: center;
-    }
-    .timer {
-      font-size: 3em;
-      background: rgba(0,0,0,0.5);
-      padding: 20px 40px;
-      border-radius: 20px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css"> <!-- підключаємо стилі -->
 </head>
 <body>
   <div class="timer">
@@ -29,27 +11,6 @@
     <span id="countdown"></span>
   </div>
 
-  <script>
-    // дата до якої рахуємо
-    const targetDate = new Date("2025-10-21T20:00:00").getTime();
-
-    const countdown = document.getElementById("countdown");
-
-    setInterval(() => {
-      const now = new Date().getTime();
-      const distance = targetDate - now;
-
-      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-      countdown.innerHTML = `${days} дн  ${hours} год  ${minutes} хв  ${seconds} сек `;
-
-      if (distance < 0) {
-        countdown.innerHTML = "Гарячий Братчик приїхав!😋";
-      }
-    }, 1000);
-  </script>
+  <script src="script.js"></script> <!-- підключаємо код -->
 </body>
 </html>
