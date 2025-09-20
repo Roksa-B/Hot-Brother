@@ -17,7 +17,8 @@ body {
   padding: 20px 40px;
   border-radius: 20px;
   border: 0px solid #fc037f; /* помаранчева рамка */
-  box-shadow: 0 0 0px #fc037f;
+  box-shadow: 0 0 50px #4c0080;
+  opasity: 0.6;
   z-index: 10;
 }
 
