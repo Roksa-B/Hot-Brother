@@ -25,7 +25,7 @@ function createEmoji() {
   emoji.classList.add("emoji");
   emoji.innerText = emojis[Math.floor(Math.random() * emojis.length)];
   emoji.style.left = Math.random() * 100 + "vw"; // випадкова позиція
-  emoji.style.animationDuration = (3 + Math.random() * 5) + "s"; // швидкість
+  emoji.style.animationDuration = (3 + Math.random() * 10) + "s"; // швидкість
   document.body.appendChild(emoji);
 
   setTimeout(() => emoji.remove(), 8000); // видалити після анімації
