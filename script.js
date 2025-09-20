@@ -11,7 +11,7 @@ setInterval(() => {
   const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  countdown.innerHTML = `${days} дн 🌍 ${hours} год ⏰ ${minutes} хв 🕒 ${seconds} сек 🔥`;
+  countdown.innerHTML = `${days} дн 🙇🏼‍♀️ ${hours} год 🍼 ${minutes} хв 💦 ${seconds} сек 👅`;
 
   if (distance < 0) {
     countdown.innerHTML = "Гарячий Братчик приїхав!😋";
@@ -19,7 +19,7 @@ setInterval(() => {
 }, 1000);
 
 // Літаючі емоджі
-const emojis = ["🪢","💋","🍑","👧🏼","💕","🍼","😛","🦄"];
+const emojis = ["🪢","👩🏼‍❤️‍👨🏻","🍑","👧🏼","💕","🍼","😛","🦄","🍌"];
 function createEmoji() {
   const emoji = document.createElement("div");
   emoji.classList.add("emoji");
