@@ -14,7 +14,7 @@ body {
 .timer {
   font-size: 3em;
   background: rgba(76, 0, 128);
-  padding: 20px 40px;
+  padding: 10px 20px 40px 20px;
   border-radius: 20px;
   border: 0px solid #fc037f; /* помаранчева рамка */
   box-shadow: 0 0 50px #4c0080;
